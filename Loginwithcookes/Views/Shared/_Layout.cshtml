@@ -37,7 +37,7 @@
                                         else
                                         {
                                             <li class="nav-item">
-                                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Login">@HttpContextAccessor.HttpContext.Request.Cookies["AuthenticationCookie"];</a>
+                                                <span class="nav-link text-dark"  >@HttpContextAccessor.HttpContext.Request.Cookies["AuthenticationCookie"];</span>
                                             </li>
                                         }
                 </ul>
