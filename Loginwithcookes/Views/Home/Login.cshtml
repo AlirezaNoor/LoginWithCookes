@@ -1,0 +1,17 @@
+﻿@model  Loginwithcookes.Models.entity.User;
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_Layout";
+}
+<form method="post" asp-action="Login">
+    <div class="row">
+        <div class="col">
+            <input type="text" class="form-control" placeholder="First name" asp-for="usename">
+        </div>
+        <div class="col">
+            <input type="text" class="form-control" placeholder="Last name" asp-for="password">
+        </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Sign in</button>
+</form>
